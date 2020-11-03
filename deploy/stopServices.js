@@ -3,6 +3,7 @@ let pids = Cmds.pids(['admin.jar','config.jar','registry.jar','gateway.jar','aut
 
 pids.forEach(pid => {
     console.log('killing: ' + pid);
+    
 });
 
 Cmds.kill(pids);

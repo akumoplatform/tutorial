@@ -1,1 +1,0 @@
-io.lib('lib.js');
