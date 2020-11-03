@@ -11,8 +11,7 @@ let params = {
 let services = [
     {
         'name': 'config',
-        'artifact': './target/config.jar',
-        'wait': true
+        'artifact': './target/config.jar'
     },
     {
         'name': 'admin',
@@ -60,7 +59,7 @@ if (Maven.hasError(mvnResult.getRaw())) {
         }
         params.base = config.mac.src + service.name;
         params.wait = false;
-        params.stop = ' ';
+        params.stop = 'Started';
         cmd(params).exe();
 
     });
