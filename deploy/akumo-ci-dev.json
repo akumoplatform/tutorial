@@ -1,0 +1,10 @@
+{
+    "mac":{
+        "src":"/Users/alissonpedrina/Documents/gitprojects/platform/native-cloud/",
+        "tool":"/Users/alissonpedrina/Documents/gitprojects/akumoplatform/java/compiler/tool",
+        "commons":"/Users/alissonpedrina/Documents/gitprojects/platform/akumo-commons",
+        "js":"/Users/alissonpedrina/Documents/gitprojects/platform/akumo-js",
+        "jlink":"/Users/alissonpedrina/Documents/programs/jdk-14.0.1.jdk/Contents/Home/bin/jlink"
+    }
+
+}
