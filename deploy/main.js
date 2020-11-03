@@ -9,6 +9,10 @@ if (Maven.hasError(mvnResult.getRaw())) {
     console.log(mvnResult.getRaw());
 
 } else {
+    params.base = config.mac.src + service.name;
+    params.wait = false;
+    params.stop = 'Started';
+    
     services.forEach(service => {
         console.log('starting: ' + service.name);
         if (service.profile) {
@@ -18,9 +22,6 @@ if (Maven.hasError(mvnResult.getRaw())) {
             params.args = ['java', '-jar', service.artifact];
 
         }
-        params.base = config.mac.src + service.name;
-        params.wait = false;
-        params.stop = 'Started';
         cmd(params).exe();
 
     });
