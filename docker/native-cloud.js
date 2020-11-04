@@ -18,6 +18,5 @@ let dev = { 'url': 'http://localhost:8761/admin' };
 const regDev = registry(dev);
 
 const regDevAll = JSON.parse(regDev.all());
-
 console.log(regDevAll[0].instances[0].appName);
 regDev.up();
