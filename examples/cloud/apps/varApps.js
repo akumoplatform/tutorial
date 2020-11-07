@@ -1,6 +1,11 @@
-let pathConfigFile = 'akumo-ci-' + System.var('env') + '.json';
+let pathConfigFile = 'config-' + System.var('env') + '.json';
 
-let configFilePath = System.var('user.dir') + System.separator() + pathConfigFile;
+let configFilePath = System.var('user.dir') + 
+        System.separator() + 
+        '..' + 
+        System.separator() + 
+        pathConfigFile;
+
 let config = JSON.parse(Files.read(configFilePath));
 
 let springProfile = '-Dspring.profiles.active=dev';
@@ -17,11 +22,6 @@ let services = [
         'artifact': './target/config.jar'
     },
     {
-        'name': 'admin',
-        'artifact': './target/admin.jar',
-        'profile': springProfile
-    },
-    {
         'name': 'registry',
         'artifact': './target/registry.jar',
         'profile': springProfile
@@ -29,11 +29,6 @@ let services = [
     {
         'name': 'gateway',
         'artifact': './target/gateway.jar',
-        'profile': springProfile
-    },
-    {
-        'name': 'auth',
-        'artifact': './target/authorization-server.jar',
         'profile': springProfile
     },
     {

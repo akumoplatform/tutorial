@@ -27,6 +27,18 @@ docker = {
         }
 
     },
+    stop: function(params){
+        this._exe(params, 'stop');
+
+    },
+    rm: function(params){
+        this._exe(params, 'rm');
+        
+    },
+    inspect: function(id){
+        return cmd({ 'args': ['docker','inspect', id], 'wait': true }).exe().getRaw()
+        
+    },
     ps: function (cid) {
         if (cid) {
             let result = cmd({ 'args': ["bash", "-c", "docker ps -a | grep " + cid] }).exe().getRaw();
@@ -55,33 +67,21 @@ docker = {
         }
 
     },
-    build: function (params, obj) {
-        if (obj) {
-            return this._exe(params, 'build', obj);
-
-        }
+    build: function (params) {
         return this._exe(params, 'build');
 
     },
-    run: function (params, obj) {
-        return this._exe(params, 'run', obj);
+    run: function (params) {
+        return this._exe(params, 'run');
 
     },
-    _exe: function (params, command, obj) {
-        if (params) {
-            params.unshift('docker', command);
+    _exe: function (params, command) {
+        if (params && params.args) {
+            console.log(1);
+            params.args.unshift('docker', command);
 
         }
-        let params2cmd = { 'args': params };
-        if (obj && obj.base) {
-            params2cmd.base = obj.base;
-
-        }
-        if (obj && obj.stop) {
-            params2cmd.stop = obj.stop;
-
-        }
-        return cmd(params2cmd).exe().getRaw();
+        return cmd(params).exe().getRaw();
 
     }
 

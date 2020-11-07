@@ -1,20 +1,21 @@
-io.rel('stopServices.js');
-io.rel('config.js');
+io.rel('stopApps.js');
+io.rel('varApps.js');
 
 console.log('starting deployment...');
 
 let mvnResult = cmd(params).exe();
 console.log(mvnResult.getRaw());
+
 if (Maven.hasError(mvnResult.getRaw())) {
     console.log(mvnResult.getRaw());
 
 } else {
-    params.base = config.mac.src + service.name;
     params.wait = false;
     params.stop = 'Started';
     
     services.forEach(service => {
         console.log('starting: ' + service.name);
+        params.base = config.mac.src + service.name;
         if (service.profile) {
             params.args = ['java', '-jar', service.profile, service.artifact];
 
