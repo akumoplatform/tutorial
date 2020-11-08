@@ -1,4 +1,4 @@
-io.lib('/docker/docker.js');
+io.lib('/cloud/docker.js');
 io.rel('varContainers.js');
 io.rel('stopContainers.js');
 

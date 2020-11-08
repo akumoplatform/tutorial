@@ -1,4 +1,4 @@
-io.lib('/docker/docker.js');
+io.lib('/cloud/docker.js');
 
 function registry(configurations) {
     return {

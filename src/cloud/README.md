@@ -4,7 +4,7 @@ This project-example is about automate scripts to deploy and running a Native Cl
 
 ## Install
 
-To install copy the this files: <b>registry.js</b> and <b>docker.js</b> to <b>'$AKUMO_HOME/lib/js'</b> directory.
+To install copy the this files: <b>registry.js</b> and <b>docker.js</b> to <b>'$AKUMO_HOME/lib/js/cloud'</b> directory.
 
 ## Native Cloud Application
 
@@ -16,9 +16,10 @@ https://github.com/akumoplatform/native-cloud.git
 
 ## Running
 
-Firstly you need edit the <b>'config-dev.json'</b> and set the variables pointing for your 'native-cloud' application folders.
+### config
+Firstly you need edit the either files <b>'config-dev.json'</b> and <b>'/cloud/apps/varApps.js'</b> setting the variables pointing for your 'native-cloud' application folders and others environment variables.
 
-### Apps
+### apps
 
 Navigate to <b>'<this_repository>/examples/cloud/apps'</b> and run:
 
@@ -26,7 +27,7 @@ Navigate to <b>'<this_repository>/examples/cloud/apps'</b> and run:
 <$AKUMO_HOME>/akumo -i:mainApps.js -Denv:dev
 ```
 
-### Containers
+### containers
 
 Navigate to <b>'<this_repository>/examples/cloud/containers'</b> and run:
 
@@ -34,14 +35,14 @@ Navigate to <b>'<this_repository>/examples/cloud/containers'</b> and run:
 <$AKUMO_HOME>/akumo -i:mainContainers.js -Denv:dev
 ```
 
-## Testing
+## testing
 
 ### mock endpoints
 
 To test manually:
 
 ```
-http://192.168.178.26:8889/customer/v1
+http://localhsot:8889/customer/v1
 
 http://localhost:8089/api/customer/v1/all
 ```

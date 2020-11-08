@@ -62,7 +62,7 @@ docker = {
             return elements;
 
         } else {
-            return this._exe(params, 'ps');
+            return this._exe({}, 'ps');
 
         }
 
@@ -77,7 +77,6 @@ docker = {
     },
     _exe: function (params, command) {
         if (params && params.args) {
-            console.log(1);
             params.args.unshift('docker', command);
 
         }

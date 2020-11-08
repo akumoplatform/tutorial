@@ -1,4 +1,4 @@
-io.lib('/docker/docker.js');
+io.lib('/cloud/docker.js');
 
 let container = docker.ps('8761/tcp');//gatewayC1
 let id = container[0].containerId;
