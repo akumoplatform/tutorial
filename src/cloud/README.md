@@ -16,6 +16,8 @@ https://github.com/akumoplatform/native-cloud.git
 
 ## Running
 
+Firstly you need edit the <b>'config-dev.json'</b> and set the variables pointing for your 'native-cloud' application folders.
+
 ### Apps
 
 Navigate to <b>'<this_repository>/examples/cloud/apps'</b> and run:
