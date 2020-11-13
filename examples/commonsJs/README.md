@@ -5,6 +5,6 @@ How akumo use the mozilla rhino we can take advantage of CommonsJs modules. The 
 <p>
 To run the example navigate to 'commons-js' folder and type:
 
-´´´
+```
 akumo -i:loadJs.js
-´´´
+```
