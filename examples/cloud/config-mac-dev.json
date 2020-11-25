@@ -1,0 +1,10 @@
+{
+    "mac":{
+        "src":"/Users/alissonpedrina/Documents/gitprojects/platform/native-cloud/",
+        "configSrc":"/Users/alissonpedrina/Documents/gitprojects/platform/native-cloud/config",
+        "registrySrc":"/Users/alissonpedrina/Documents/gitprojects/platform/native-cloud/registry",
+        "customerSrc":"/Users/alissonpedrina/Documents/gitprojects/platform/native-cloud/customer",
+        "gatewaySrc":"/Users/alissonpedrina/Documents/gitprojects/platform/native-cloud/gateway"
+    }
+
+}

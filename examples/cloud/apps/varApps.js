@@ -10,10 +10,10 @@ let config = JSON.parse(Files.read(configFilePath));
 
 let springProfile = '-Dspring.profiles.active=dev';
 let params = {
-    'args': ['mvn', 'clean', 'install', '-DskipTests=true'],
-    'base': config.mac.src,
-    'env': { 'JAVA_HOME': '/Users/alissonpedrina/Documents/programs/jdk-14.0.1.jdk/Contents/Home' },
-    'wait': true
+    'args': [config.paths.mvn, 'clean', 'install', '-DskipTests'],
+    'base': config.paths.src,
+    'env': { 'JAVA_HOME': config.paths.java },
+    'wait': false
 }
 
 let services = [
