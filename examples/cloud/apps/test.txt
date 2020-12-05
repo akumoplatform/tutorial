@@ -1,0 +1,260 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] akumos-cloud                                                       [pom]
+[INFO] gateway                                                            [jar]
+[INFO] registry                                                           [jar]
+[INFO] config                                                             [jar]
+[INFO] customer                                                           [jar]
+[INFO] monitoring                                                         [jar]
+[INFO] admin                                                              [jar]
+[INFO] 
+[INFO] ------------------< com.alissonpedrina:akumos-cloud >-------------------
+[INFO] Building akumos-cloud 0.0.1-SNAPSHOT                               [1/7]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ akumos-cloud ---
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.1.6.RELEASE:repackage (repackage) @ akumos-cloud ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ akumos-cloud ---
+[INFO] Installing /Users/alissonpedrina/Documents/gitprojects/platform/native-cloud/pom.xml to /Users/alissonpedrina/.m2/repository/com/alissonpedrina/akumos-cloud/0.0.1-SNAPSHOT/akumos-cloud-0.0.1-SNAPSHOT.pom
+[INFO] 
+[INFO] ---------------------< com.alissonpedrina:gateway >---------------------
+[INFO] Building gateway 0.0.1-SNAPSHOT                                    [2/7]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ gateway ---
+[INFO] Deleting /Users/alissonpedrina/Documents/gitprojects/platform/native-cloud/gateway/target
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ gateway ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ gateway ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 3 source files to /Users/alissonpedrina/Documents/gitprojects/platform/native-cloud/gateway/target/classes
+[INFO] /Users/alissonpedrina/Documents/gitprojects/platform/native-cloud/gateway/src/main/java/com/alissonpedrina/config/WebConfig.java: /Users/alissonpedrina/Documents/gitprojects/platform/native-cloud/gateway/src/main/java/com/alissonpedrina/config/WebConfig.java uses or overrides a deprecated API.
+[INFO] /Users/alissonpedrina/Documents/gitprojects/platform/native-cloud/gateway/src/main/java/com/alissonpedrina/config/WebConfig.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ gateway ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/alissonpedrina/Documents/gitprojects/platform/native-cloud/gateway/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ gateway ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.2:test (default-test) @ gateway ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.1.2:jar (default-jar) @ gateway ---
+[INFO] Building jar: /Users/alissonpedrina/Documents/gitprojects/platform/native-cloud/gateway/target/gateway-0.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.1.6.RELEASE:repackage (repackage) @ gateway ---
+[INFO] Replacing main artifact with repackaged archive
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ gateway ---
+[INFO] Installing /Users/alissonpedrina/Documents/gitprojects/platform/native-cloud/gateway/target/gateway.jar to /Users/alissonpedrina/.m2/repository/com/alissonpedrina/gateway/0.0.1-SNAPSHOT/gateway-0.0.1-SNAPSHOT.jar
+[INFO] Installing /Users/alissonpedrina/Documents/gitprojects/platform/native-cloud/gateway/pom.xml to /Users/alissonpedrina/.m2/repository/com/alissonpedrina/gateway/0.0.1-SNAPSHOT/gateway-0.0.1-SNAPSHOT.pom
+[INFO] 
+[INFO] --------------------< com.alissonpedrina:registry >---------------------
+[INFO] Building registry 0.0.1-SNAPSHOT                                   [3/7]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ registry ---
+[INFO] Deleting /Users/alissonpedrina/Documents/gitprojects/platform/native-cloud/registry/target
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ registry ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ registry ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 5 source files to /Users/alissonpedrina/Documents/gitprojects/platform/native-cloud/registry/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ registry ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/alissonpedrina/Documents/gitprojects/platform/native-cloud/registry/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ registry ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.2:test (default-test) @ registry ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.1.2:jar (default-jar) @ registry ---
+[INFO] Building jar: /Users/alissonpedrina/Documents/gitprojects/platform/native-cloud/registry/target/registry-0.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.1.6.RELEASE:repackage (repackage) @ registry ---
+[INFO] Replacing main artifact with repackaged archive
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ registry ---
+[INFO] Installing /Users/alissonpedrina/Documents/gitprojects/platform/native-cloud/registry/target/registry.jar to /Users/alissonpedrina/.m2/repository/com/alissonpedrina/registry/0.0.1-SNAPSHOT/registry-0.0.1-SNAPSHOT.jar
+[INFO] Installing /Users/alissonpedrina/Documents/gitprojects/platform/native-cloud/registry/pom.xml to /Users/alissonpedrina/.m2/repository/com/alissonpedrina/registry/0.0.1-SNAPSHOT/registry-0.0.1-SNAPSHOT.pom
+[INFO] 
+[INFO] ---------------------< com.alissonpedrina:config >----------------------
+[INFO] Building config 0.0.1-SNAPSHOT                                     [4/7]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ config ---
+[INFO] Deleting /Users/alissonpedrina/Documents/gitprojects/platform/native-cloud/config/target
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ config ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ config ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /Users/alissonpedrina/Documents/gitprojects/platform/native-cloud/config/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ config ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/alissonpedrina/Documents/gitprojects/platform/native-cloud/config/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ config ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.1:test (default-test) @ config ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.1.2:jar (default-jar) @ config ---
+[INFO] Building jar: /Users/alissonpedrina/Documents/gitprojects/platform/native-cloud/config/target/config.jar
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.1.6.RELEASE:repackage (repackage) @ config ---
+[INFO] Replacing main artifact with repackaged archive
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ config ---
+[INFO] Installing /Users/alissonpedrina/Documents/gitprojects/platform/native-cloud/config/target/config.jar to /Users/alissonpedrina/.m2/repository/com/alissonpedrina/config/0.0.1-SNAPSHOT/config-0.0.1-SNAPSHOT.jar
+[INFO] Installing /Users/alissonpedrina/Documents/gitprojects/platform/native-cloud/config/pom.xml to /Users/alissonpedrina/.m2/repository/com/alissonpedrina/config/0.0.1-SNAPSHOT/config-0.0.1-SNAPSHOT.pom
+[INFO] 
+[INFO] --------------------< com.alissonpedrina:customer >---------------------
+[INFO] Building customer 0.0.1-SNAPSHOT                                   [5/7]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ customer ---
+[INFO] Deleting /Users/alissonpedrina/Documents/gitprojects/platform/native-cloud/customer/target
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ customer ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ customer ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 3 source files to /Users/alissonpedrina/Documents/gitprojects/platform/native-cloud/customer/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ customer ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/alissonpedrina/Documents/gitprojects/platform/native-cloud/customer/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ customer ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.2:test (default-test) @ customer ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.1.2:jar (default-jar) @ customer ---
+[INFO] Building jar: /Users/alissonpedrina/Documents/gitprojects/platform/native-cloud/customer/target/customer.jar
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.1.6.RELEASE:repackage (repackage) @ customer ---
+[INFO] Replacing main artifact with repackaged archive
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ customer ---
+[INFO] Installing /Users/alissonpedrina/Documents/gitprojects/platform/native-cloud/customer/target/customer.jar to /Users/alissonpedrina/.m2/repository/com/alissonpedrina/customer/0.0.1-SNAPSHOT/customer-0.0.1-SNAPSHOT.jar
+[INFO] Installing /Users/alissonpedrina/Documents/gitprojects/platform/native-cloud/customer/pom.xml to /Users/alissonpedrina/.m2/repository/com/alissonpedrina/customer/0.0.1-SNAPSHOT/customer-0.0.1-SNAPSHOT.pom
+[INFO] 
+[INFO] -------------------< com.alissonpedrina:monitoring >--------------------
+[INFO] Building monitoring 0.0.1-SNAPSHOT                                 [6/7]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ monitoring ---
+[INFO] Deleting /Users/alissonpedrina/Documents/gitprojects/platform/native-cloud/monitoring/target
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ monitoring ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ monitoring ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /Users/alissonpedrina/Documents/gitprojects/platform/native-cloud/monitoring/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ monitoring ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/alissonpedrina/Documents/gitprojects/platform/native-cloud/monitoring/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ monitoring ---
+[INFO] Changes detected - recompiling the module!
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.2:test (default-test) @ monitoring ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.1.2:jar (default-jar) @ monitoring ---
+[INFO] Building jar: /Users/alissonpedrina/Documents/gitprojects/platform/native-cloud/monitoring/target/monitoring-0.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.1.6.RELEASE:repackage (repackage) @ monitoring ---
+[INFO] Replacing main artifact with repackaged archive
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ monitoring ---
+[INFO] Installing /Users/alissonpedrina/Documents/gitprojects/platform/native-cloud/monitoring/target/monitoring.jar to /Users/alissonpedrina/.m2/repository/com/alissonpedrina/monitoring/0.0.1-SNAPSHOT/monitoring-0.0.1-SNAPSHOT.jar
+[INFO] Installing /Users/alissonpedrina/Documents/gitprojects/platform/native-cloud/monitoring/pom.xml to /Users/alissonpedrina/.m2/repository/com/alissonpedrina/monitoring/0.0.1-SNAPSHOT/monitoring-0.0.1-SNAPSHOT.pom
+[INFO] 
+[INFO] ----------------------< com.alissonpedrina:admin >----------------------
+[INFO] Building admin 0.0.1-SNAPSHOT                                      [7/7]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ admin ---
+[INFO] Deleting /Users/alissonpedrina/Documents/gitprojects/platform/native-cloud/admin/target
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ admin ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] Copying 149 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ admin ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 14 source files to /Users/alissonpedrina/Documents/gitprojects/platform/native-cloud/admin/target/classes
+[INFO] /Users/alissonpedrina/Documents/gitprojects/platform/native-cloud/admin/src/main/java/com/netflix/hystrix/dashboard/stream/ProxyStreamServlet.java: /Users/alissonpedrina/Documents/gitprojects/platform/native-cloud/admin/src/main/java/com/netflix/hystrix/dashboard/stream/ProxyStreamServlet.java uses or overrides a deprecated API.
+[INFO] /Users/alissonpedrina/Documents/gitprojects/platform/native-cloud/admin/src/main/java/com/netflix/hystrix/dashboard/stream/ProxyStreamServlet.java: Recompile with -Xlint:deprecation for details.
+[INFO] /Users/alissonpedrina/Documents/gitprojects/platform/native-cloud/admin/src/main/java/com/akumos/config/ServletConfig.java: /Users/alissonpedrina/Documents/gitprojects/platform/native-cloud/admin/src/main/java/com/akumos/config/ServletConfig.java uses unchecked or unsafe operations.
+[INFO] /Users/alissonpedrina/Documents/gitprojects/platform/native-cloud/admin/src/main/java/com/akumos/config/ServletConfig.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ admin ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/alissonpedrina/Documents/gitprojects/platform/native-cloud/admin/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ admin ---
+[INFO] Changes detected - recompiling the module!
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.2:test (default-test) @ admin ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.1.2:jar (default-jar) @ admin ---
+[INFO] Building jar: /Users/alissonpedrina/Documents/gitprojects/platform/native-cloud/admin/target/admin-0.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.1.6.RELEASE:repackage (repackage) @ admin ---
+[INFO] Replacing main artifact with repackaged archive
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ admin ---
+[INFO] Installing /Users/alissonpedrina/Documents/gitprojects/platform/native-cloud/admin/target/admin.jar to /Users/alissonpedrina/.m2/repository/com/alissonpedrina/admin/0.0.1-SNAPSHOT/admin-0.0.1-SNAPSHOT.jar
+[INFO] Installing /Users/alissonpedrina/Documents/gitprojects/platform/native-cloud/admin/pom.xml to /Users/alissonpedrina/.m2/repository/com/alissonpedrina/admin/0.0.1-SNAPSHOT/admin-0.0.1-SNAPSHOT.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for akumos-cloud 0.0.1-SNAPSHOT:
+[INFO] 
+[INFO] akumos-cloud ....................................... SUCCESS [  3.021 s]
+[INFO] gateway ............................................ SUCCESS [  5.820 s]
+[INFO] registry ........................................... SUCCESS [  2.806 s]
+[INFO] config ............................................. SUCCESS [  1.485 s]
+[INFO] customer ........................................... SUCCESS [  1.172 s]
+[INFO] monitoring ......................................... SUCCESS [  0.856 s]
+[INFO] admin .............................................. SUCCESS [  2.837 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  19.066 s
+[INFO] Finished at: 2020-12-05T12:17:56Z
+[INFO] ------------------------------------------------------------------------
