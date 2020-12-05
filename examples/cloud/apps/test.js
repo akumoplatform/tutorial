@@ -15,15 +15,26 @@ params = {
 }
 let p = cmd(params).run();
 
-let count = 0;
-while (true) {
-    if (Files.count('test.txt') > count) {
-        console.log(Files.line('test.txt', count));
-        count += 1;
+print('test.txt', p);
 
-    }
-    if (p.isStopped()) {
-        break;
+if (p.status() === 'error'){
+    console.log('deu merda...');
+} else if (p.status() === 'success'){
+    console.log('sucesso...');
+}
+
+
+function print(file, p) {
+    let count = 0;
+    while (true) {
+        if (Files.count(file) > count) {
+            console.log(Files.line(file, count));
+            count += 1;
+
+        }
+        if (p.isStopped()) {
+            break;
+        }
     }
 }
 
