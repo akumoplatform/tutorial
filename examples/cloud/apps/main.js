@@ -5,7 +5,8 @@ io.rel('core/functions.js');
 console.log('starting deployment...');
 
 let mvnProcess = cmd(mvnParams).run();
-print('log/mvn.log', mvnProcess);
+
+print(mvnParams.out, mvnProcess);
 
 if (mvnProcess.status() == 'success') {
 	console.log('starting services...');
@@ -19,7 +20,6 @@ if (mvnProcess.status() == 'success') {
             mvnServicesParams.args = ['java', '-jar', service.artifact];
 
         }
-        console.log('ver: ' + JSON.stringify(mvnServicesParams));
         cmd(mvnServicesParams).run();
 
     });

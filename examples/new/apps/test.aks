@@ -1,0 +1,5 @@
+let scriptParam = {
+    
+    'args': ["cmd.exe","/c","start","cmd","/k","\"akumo console.log(9)\""]
+}
+let p = cmd(scriptParam).run();

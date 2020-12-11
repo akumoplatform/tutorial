@@ -6,7 +6,7 @@ function print(file, p) {
             count += 1;
 
         }
-        if (p.status() == 'error' || p.status() == 'success') {
+        if (Files.count(file) == count && (p.isStopped()) ){
             break;
         }
     }

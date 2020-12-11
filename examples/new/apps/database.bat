@@ -1,0 +1,1 @@
+akumo -i:infra\\mysql.js -Denv:win-dev -DmysqlUser:root -DmysqlPass:Aplux230880

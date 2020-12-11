@@ -1,11 +1,11 @@
 {
   "paths": {
-    "src": "C:\\projects\\native-cloud\\",
-    "configSrc": "C:\\projects\\native-cloud\\config",
-    "registrySrc": "C:\\projects\\native-cloud\\registry",
-    "customerSrc": "C:\\projects\\native-cloud\\customer",
-    "gatewaySrc": "C:\\projects\\native-cloud\\gateway",
-    "java": "C:\\programs\\jdk-15.0.1",
+    "src": "C:\\projects\\personal\\native-cloud\\",
+    "configSrc": "C:\\projects\\personal\\native-cloud\\config",
+    "registrySrc": "C:\\projects\\personal\\native-cloud\\registry",
+    "customerSrc": "C:\\projects\\personal\\native-cloud\\customer",
+    "gatewaySrc": "C:\\projects\\personal\\native-cloud\\gateway",
+    "java": "C:\\programs\\jdk-15.0.1_windows-x64_bin\\jdk-15.0.1",
     "mvn": "C:\\programs\\apache-maven-3.6.3\\bin\\mvn.cmd"
   }
 }
